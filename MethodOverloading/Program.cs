@@ -24,19 +24,19 @@
            {
                //return $"{moneySum} dollar";
            }
-            if (c == true && moneySum > 1)
+            if (c == true && moneySum > 1 || c == true && moneySum < -1)
             {
                 return $"{moneySum} dollars";
             }
-            if (c == true && moneySum < -1)
+           // if (c == true && moneySum < -1)
             {
-                return $"{moneySum} dollars, Yikes!";
+                //return $"{moneySum} dollars";
             }
-            if (c == true && moneySum == 1)
+           // if (c == true && moneySum == 1)
             {
-                return $"{moneySum} dollar";
+               // return $"{moneySum} dollar";
             }
-            if (c == true && moneySum == -1)
+            if (c == true && moneySum == -1 || c == true && moneySum == 1)
             {
                 return $"{moneySum} dollar";
             }
@@ -61,7 +61,7 @@
             var b = 7.2m;
             var answer2 = Add(a,b);
 
-            var answer3 = Add(0, 1, true);
+            var answer3 = Add(1, 4, true);
             
             Console.WriteLine($"int add : {answer}");
             Console.WriteLine($"decimal add : {answer2}");
